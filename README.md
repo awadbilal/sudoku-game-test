@@ -9,6 +9,9 @@ This project was built as part of a challenge i creatd for myself to keep coding
 ## Preview
 ![Sudoku Game GIF](https://github.com/awadbilal/portfolio/raw/master/src/locales/images/SGGIF.gif)
 
+# Design Inspired by
+### [Olivia Anggun Permatasari](https://dribbble.com/shots/15075736-Sudoku-Game-Leaderboard-Web-Design/attachments/6804993?mode=media)
+
 ## Duration to develop:
 ### Starting date: January 10th, 2022
 ### Finishing date: January ..., 2022
