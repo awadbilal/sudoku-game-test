@@ -3,7 +3,15 @@
   padding: 0.2rem 0.7rem;
   background-color: white;
   color: #0a0b53;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
 }
 .boxLeft {
   border-left: 2px solid black;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
