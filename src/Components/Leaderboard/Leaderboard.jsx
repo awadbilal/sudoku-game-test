@@ -3,7 +3,7 @@ import { Col } from 'react-bootstrap';
 
 function Leaderboard() {
   return (
-    <Col xs={12} sm={12} md={4} lg={4}>
+    <Col xs={12} sm={12} md={12} lg={4}>
       Leaderboard is here
     </Col>
   );
