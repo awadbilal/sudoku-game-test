@@ -1,0 +1,27 @@
+.box {
+  border: 1px solid #A4A4D6;
+  padding: 0.2rem 0.7rem;
+  background-color: white;
+  color: #0a0b53;
+  width: 4.5rem;
+  height: 4.5rem;
+  text-align: center;
+  font-size: xx-large;
+}
+.boxLeft {
+  border-left: 1px solid #4C4D98;
+}
+.boxRight {
+  border-Right: 1px solid #4C4D98;
+}
+.boxBottom {
+  border-bottom: 1px solid #4C4D98;
+}
+.boxTop {
+  border-top: 1px solid #4C4D98;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
