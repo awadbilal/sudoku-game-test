@@ -23,26 +23,23 @@ function Game() {
 
       // Creating a random number and position
       let randRow = Math.floor(Math.random() * 9),
-        randCol = Math.floor(Math.random() * 9),
-        randNumber = Math.floor(Math.random() * 9) + 1;
+          randCol = Math.floor(Math.random() * 9),
+          randNumber = Math.floor(Math.random() * 9) + 1,
+          useable = false;
       
       // Checking if the row or column does not have a matching number
-      /*
-      for (let i = 0; i < 9; i++){
-        for (let j = 0; j < 9; j++){
-          // Checking the row
-          while(temp[j][randCol] === randNumber){
+      while(useable === false) {
+        for(let i = 0; i < 9; i++){
+          while(temp[i][randCol] === randNumber){
             randNumber = Math.floor(Math.random() * 9) + 1;
-          }  
-          // Checking the column
-          while(temp[randRow][j] === randNumber){
+          }
+          while(temp[randRow][i] === randNumber){
             randNumber = Math.floor(Math.random() * 9) + 1;
-          } 
+          }
         }
-      }
-      */
-      
-      temp[randRow][randCol] = randNumber;
+        useable = true;
+        temp[randRow][randCol] = randNumber;
+      }      
       setBoard([...temp]);
     }
   }, []);
@@ -59,7 +56,7 @@ function Game() {
     <Col sm={12} md={12} lg={8}>
       {board.map((row, i) => {
         return (
-          <Row key={i} className="eq-height-column justify-content-start">
+          <Row key={i} className="eq-height-column justify-content-center">
             {row.map((item, j) => {
               return (
                 <Col
